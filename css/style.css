@@ -553,7 +553,7 @@ ul {
 }
 
 /* ==========================================================================
-   9. ÜBER DEN VEREIN (CLUB SECTION)
+   9. ÜBER DEN VEREIN (CLUB SECTION / MEHR ALS 90 MINUTEN)
    ========================================================================== */
 .club-layout {
     display: grid;
@@ -572,6 +572,32 @@ ul {
     object-fit: cover;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+}
+
+/* Typografie & Lesbarkeit für "Mehr als 90 Minuten" */
+.club-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.club-lead-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-gray-800);   /* Hoher Kontrast für hervorragende Lesbarkeit */
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.club-body-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-gray-600);   /* Harmonisches Verhältnis zum Lead-Text */
+    line-height: 1.65;
+    margin-bottom: 24px;
 }
 
 /* ==========================================================================
@@ -872,6 +898,19 @@ textarea.form-control {
     .filter-btn {
         padding: 8px 14px;
         font-size: 0.85rem;
+    }
+
+    /* Typografie-Anpassung auf Handys für den Abschnitt ÜBER DEN VEREIN */
+    .club-title {
+        font-size: 1.75rem;
+    }
+
+    .club-lead-text {
+        font-size: 1.05rem;
+    }
+
+    .club-body-text {
+        font-size: 0.95rem;
     }
 }
 
